@@ -15,14 +15,15 @@ export const GrainOverlay: React.FC = () => {
   const dy = (t * (AMBIENT.grainSpeed * 0.6)) % 160;
 
   return (
-    <AbsoluteFill
-      style={{
-        opacity: AMBIENT.grainOpacity,
-        backgroundImage: NOISE_URL,
-        backgroundSize: "160px 160px",
-        mixBlendMode: "multiply",
-        translate: `${-dx}px ${-dy}px`,
-      }}
-    />
+    <></>
+    // <AbsoluteFill
+    //   style={{
+    //     opacity: AMBIENT.grainOpacity,
+    //     backgroundImage: NOISE_URL,
+    //     backgroundSize: "160px 160px",
+    //     mixBlendMode: "multiply",
+    //     translate: `${-dx}px ${-dy}px`,
+    //   }}
+    // />
   );
 };
