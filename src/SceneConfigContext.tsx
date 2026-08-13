@@ -1,4 +1,9 @@
-import React, { createContext, useContext, useState, ReactNode } from "react";
+import React, {
+  createContext,
+  useContext,
+  useSyncExternalStore,
+  ReactNode,
+} from "react";
 
 type SceneConfig = {
   id: string;
@@ -13,6 +18,32 @@ type SceneConfigContextType = {
   setSceneConfigs: (configs: SceneConfig[]) => void;
 };
 
+// State lives in a module-level store so that the Studio UI panel and the
+// composition preview (which Remotion renders in separate React roots) share
+// the same data.
+const listeners = new Set<() => void>();
+let sceneConfigs: SceneConfig[] = [];
+
+const emitChange = () => {
+  for (const listener of listeners) {
+    listener();
+  }
+};
+
+const subscribe = (listener: () => void) => {
+  listeners.add(listener);
+  return () => {
+    listeners.delete(listener);
+  };
+};
+
+const getSnapshot = () => sceneConfigs;
+
+const setSceneConfigs = (configs: SceneConfig[]) => {
+  sceneConfigs = configs;
+  emitChange();
+};
+
 const SceneConfigContext = createContext<SceneConfigContextType | undefined>(
   undefined,
 );
@@ -20,10 +51,12 @@ const SceneConfigContext = createContext<SceneConfigContextType | undefined>(
 export const SceneConfigProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
-  const [sceneConfigs, setSceneConfigs] = useState<SceneConfig[]>([]);
+  const currentConfigs = useSyncExternalStore(subscribe, getSnapshot);
 
   return (
-    <SceneConfigContext.Provider value={{ sceneConfigs, setSceneConfigs }}>
+    <SceneConfigContext.Provider
+      value={{ sceneConfigs: currentConfigs, setSceneConfigs }}
+    >
       {children}
     </SceneConfigContext.Provider>
   );

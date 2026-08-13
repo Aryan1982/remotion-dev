@@ -1,4 +1,9 @@
-import React, { createContext, useContext, useState, ReactNode } from "react";
+import React, {
+  createContext,
+  useContext,
+  useSyncExternalStore,
+  ReactNode,
+} from "react";
 import {
   COLORS,
   FONTS,
@@ -63,21 +68,46 @@ export const ThemeContext = createContext<ThemeContextType | undefined>(
   undefined,
 );
 
+// State lives in a module-level store so that the Studio UI panel and the
+// composition preview (which Remotion renders in separate React roots) share
+// the same data.
+const listeners = new Set<() => void>();
+let themeStore: Theme = defaultTheme;
+
+const emitChange = () => {
+  for (const listener of listeners) {
+    listener();
+  }
+};
+
+const subscribe = (listener: () => void) => {
+  listeners.add(listener);
+  return () => {
+    listeners.delete(listener);
+  };
+};
+
+const getSnapshot = () => themeStore;
+
+const setThemeState = (updates: Partial<Theme>) => {
+  themeStore = { ...themeStore, ...updates };
+  emitChange();
+};
+
+const resetThemeState = () => {
+  themeStore = defaultTheme;
+  emitChange();
+};
+
 export const ThemeProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
-  const [theme, setThemeState] = useState<Theme>(defaultTheme);
-
-  const setTheme = (updates: Partial<Theme>) => {
-    setThemeState((prev) => ({ ...prev, ...updates }));
-  };
-
-  const resetTheme = () => {
-    setThemeState(defaultTheme);
-  };
+  const theme = useSyncExternalStore(subscribe, getSnapshot);
 
   return (
-    <ThemeContext.Provider value={{ theme, setTheme, resetTheme }}>
+    <ThemeContext.Provider
+      value={{ theme, setTheme: setThemeState, resetTheme: resetThemeState }}
+    >
       {children}
     </ThemeContext.Provider>
   );
