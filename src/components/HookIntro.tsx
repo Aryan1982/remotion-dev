@@ -5,7 +5,8 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
-import { C, EASING, SPRING } from "../theme";
+import { EASING, SPRING } from "../theme";
+import { useThemeColors } from "../ThemeContext";
 import { springP } from "../motion";
 import { SceneFrame } from "./SceneFrame";
 import { Background } from "./Background";
@@ -28,6 +29,7 @@ export const HookIntro: React.FC<SceneProps> = ({
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
+  const C = useThemeColors();
 
   const words = sourceText.trim().split(/\s+/).filter(Boolean);
   const emphasisWord = variant?.trim() || words[words.length - 1] || "";
