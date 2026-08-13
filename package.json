@@ -7,11 +7,17 @@
   "private": true,
   "dependencies": {
     "@remotion/cli": "4.0.506",
+    "@remotion/google-fonts": "4.0.506",
+    "@remotion/media": "^4.0.506",
+    "@remotion/noise": "4.0.506",
+    "@remotion/tailwind-v4": "4.0.506",
+    "@remotion/three": "4.0.506",
+    "@types/three": "^0.185.4",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "remotion": "4.0.506",
-    "@remotion/tailwind-v4": "4.0.506",
-    "tailwindcss": "4.0.0"
+    "tailwindcss": "4.0.0",
+    "three": "^0.185.1"
   },
   "devDependencies": {
     "@remotion/eslint-config-flat": "4.0.506",

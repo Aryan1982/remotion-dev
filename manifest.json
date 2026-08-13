@@ -1,0 +1,34 @@
+{
+  "fps": 30,
+  "sceneDurationFrames": { "min": 150, "max": 240 },
+  "overlapFrames": { "min": 8, "max": 12, "default": 10 },
+  "components": [
+    { "name": "HookIntro", "description": "Kinetic word-by-word hook line for opening or attention beats; optioned emphasis word.", "variants": ["default"] },
+    { "name": "IntroPulse", "description": "Opening or hook that needs a focused pulse of attention.", "variants": ["default"] },
+    { "name": "SignalRipple", "description": "Activity, posting, publishing, or a signal spreading outward.", "variants": ["single", "heartbeat"] },
+    { "name": "ProgressRing", "description": "Progress, growth, learning, or measurable momentum.", "variants": ["fill", "double-fill"] },
+    { "name": "NetworkGrowth", "description": "Reach, relationships, audience, or connected ideas.", "variants": ["outward", "inward"] },
+    { "name": "IconGlow", "description": "A check-this-out, reveal, recommendation, or focal callout beat.", "variants": ["default"] },
+    { "name": "PortfolioGrid", "description": "Closing, payoff, proof, collection, or outcome beat.", "variants": ["default"] },
+    { "name": "TextReveal", "description": "Multi-line paragraph or caption reveal for exposition beats.", "variants": ["default", "centered"] },
+    { "name": "BulletList", "description": "Checklist or step-by-step item reveal, one point at a time.", "variants": ["checkmark", "dot"] },
+    { "name": "QuoteCard", "description": "Pulled quote or key-takeaway callout.", "variants": ["default"] },
+    { "name": "DayCounter", "description": "For counting days( here is day .. of etc etc) in here.", "variants": ["default"] },    
+    { "name": "ComparisonSplit", "description": "Two-column this-vs-that comparison.", "variants": ["default"] },
+    { "name": "Timeline", "description": "Vertical sequence, step, or dated progression.", "variants": ["vertical"] },
+    { "name": "FlowConnector", "description": "Cause-to-effect path, flow, or 'this leads to that'.", "variants": ["default"] },
+    { "name": "StatCounter", "description": "Number counts up with overshoot for stats or metrics.", "variants": ["default"] },
+    { "name": "BarChart", "description": "Minimal bar chart comparing values.", "variants": ["default"] },
+    { "name": "LineChart", "description": "Minimal line chart for trends over time.", "variants": ["default"] },
+    { "name": "ImageFrame", "description": "Real image or screenshot with a subtle ken-burns drift.", "variants": ["default"] },
+    { "name": "CodeBlock", "description": "Styled code snippet revealed by line or typing.", "variants": ["lineReveal", "typing"] },
+    { "name": "LowerThird", "description": "Persistent topic or chapter label near the bottom.", "variants": ["default"] },
+    { "name": "ChapterCard", "description": "Full-screen section divider (Part 2: ...).", "variants": ["default"] },
+    { "name": "OutroCTA", "description": "Closing follow, subscribe, or next-video call to action.", "variants": ["default"] },
+    { "name": "MaskReveal", "description": "Soft circular wipe transition or reveal.", "variants": ["default"] }
+  ]
+}
+
+// Use hook for first motion
+// ?use chapters for each points
+// use counter for 

@@ -1,5 +1,9 @@
 # Remotion video
 
+> **Style blueprint:** see [`STYLE_GUIDE.md`](./STYLE_GUIDE.md) for the
+> "quiet luxury" design tokens, motion language, and scene architecture —
+> the reference for creating similar animated reels.
+
 <p align="center">
   <a href="https://github.com/remotion-dev/logo">
     <picture>

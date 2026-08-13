@@ -1,0 +1,82 @@
+[
+  {
+    "beat": "Introduction to personal branding",
+    "sourceText": "Why you should build your personal brand on LinkedIn or on Instagram.",
+    "component": "HookIntro",
+    "variant": "default",
+    "startFrame": 0,
+    "duration": 180
+  },
+  {
+    "beat": "Freelancing series day 11",
+    "sourceText": "Hi everyone, this is day 11 of freelancing series.",
+    "component": "TextReveal",
+    "variant": "default",
+    "startFrame": 180,
+    "duration": 150
+  },
+  {
+    "beat": "Active on LinkedIn in college",
+    "sourceText": "जब मैं college के first year में था, तब मैं LinkedIn पर बहुत active था।",
+    "component": "TextReveal",
+    "variant": "default",
+    "startFrame": 330,
+    "duration": 150
+  },
+  {
+    "beat": "Sharing project progress",
+    "sourceText": "मैं जो भी नए projects बनाता था, मैं उनकी progress LinkedIn पर जरूर share करता था।",
+    "component": "TextReveal",
+    "variant": "default",
+    "startFrame": 480,
+    "duration": 150
+  },
+  {
+    "beat": "Good reach on LinkedIn",
+    "sourceText": "मुझे काफी अच्छी reach मिलती थी।",
+    "component": "StatCounter",
+    "variant": "default",
+    "startFrame": 630,
+    "duration": 150
+  },
+  {
+    "beat": "Check my LinkedIn",
+    "sourceText": "आप मेरा LinkedIn जाकर देख सकते हो।",
+    "component": "IconGlow",
+    "variant": "default",
+    "startFrame": 780,
+    "duration": 150
+  },
+  {
+    "beat": "Showcasing skills",
+    "sourceText": "उसी तरह आपके जो skills हैं, suppose आप video editing करते हो, तो वो चीज आपको post करनी है।",
+    "component": "TextReveal",
+    "variant": "default",
+    "startFrame": 930,
+    "duration": 180
+  },
+  {
+    "beat": "Sharing progress and learning",
+    "sourceText": "आपके जो progress है या तो आप कुछ नया सीख रहे हो।",
+    "component": "ProgressRing",
+    "variant": "fill",
+    "startFrame": 1110,
+    "duration": 150
+  },
+  {
+    "beat": "Attracting potential clients",
+    "sourceText": "ये सारी चीजें लोगों को देखने में अच्छी लगती है और potential clients भी reach out कर सकते हैं।",
+    "component": "NetworkGrowth",
+    "variant": "outward",
+    "startFrame": 1260,
+    "duration": 180
+  },
+  {
+    "beat": "Building a portfolio",
+    "sourceText": "अगर आपको suppose clients नहीं भी मिलते, तो ये आपकी जो profile है, उसको आप as a portfolio बना रहे हो।",
+    "component": "PortfolioGrid",
+    "variant": "default",
+    "startFrame": 1440,
+    "duration": 180
+  }
+]

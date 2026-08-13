@@ -1,0 +1,9 @@
+[
+  {
+    "id": "hook",
+    "component": "HookIntro",
+    "variant": "default",
+    "duration": 180,
+    "sourceText": "THINGS I LEARNED FROM MY WORST CLIENT"
+  }
+]

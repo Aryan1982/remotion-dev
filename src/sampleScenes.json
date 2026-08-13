@@ -1,0 +1,156 @@
+[
+  {
+    "id": "hook-intro",
+    "component": "HookIntro",
+    "variant": "default",
+    "duration": 150,
+    "sourceText": "Process wins. Every time."
+  },
+  {
+    "id": "intro-pulse",
+    "component": "IntroPulse",
+    "variant": "default",
+    "duration": 150,
+    "sourceText": "Your story starts here."
+  },
+  {
+    "id": "signal-ripple",
+    "component": "SignalRipple",
+    "variant": "heartbeat",
+    "duration": 150,
+    "sourceText": "Post. Pause. Post again."
+  },
+  {
+    "id": "progress-ring",
+    "component": "ProgressRing",
+    "variant": "double-fill",
+    "duration": 150,
+    "sourceText": "Learning compounds every day."
+  },
+  {
+    "id": "network-growth",
+    "component": "NetworkGrowth",
+    "variant": "inward",
+    "duration": 150,
+    "sourceText": "The audience finds you."
+  },
+  {
+    "id": "icon-glow",
+    "component": "IconGlow",
+    "variant": "default",
+    "duration": 150,
+    "sourceText": "Take a closer look."
+  },
+  {
+    "id": "portfolio-grid",
+    "component": "PortfolioGrid",
+    "variant": "default",
+    "duration": 150,
+    "sourceText": "The work speaks for itself."
+  },
+  {
+    "id": "text-reveal",
+    "component": "TextReveal",
+    "variant": "centered",
+    "duration": 150,
+    "sourceText": "Most creators quit before compounding begins."
+  },
+  {
+    "id": "bullet-list",
+    "component": "BulletList",
+    "variant": "checkmark",
+    "duration": 150,
+    "sourceText": "Show up daily. Ship small things. Let it compound."
+  },
+  {
+    "id": "quote-card",
+    "component": "QuoteCard",
+    "variant": "default",
+    "duration": 150,
+    "sourceText": "Consistency is the only shortcut."
+  },
+  {
+    "id": "comparison-split",
+    "component": "ComparisonSplit",
+    "variant": "default",
+    "duration": 150,
+    "sourceText": "Stop guessing, start testing."
+  },
+  {
+    "id": "timeline",
+    "component": "Timeline",
+    "variant": "default",
+    "duration": 150,
+    "sourceText": "The idea. The build. The share."
+  },
+  {
+    "id": "flow-connector",
+    "component": "FlowConnector",
+    "variant": "default",
+    "duration": 150,
+    "sourceText": "One post leads to the next."
+  },
+  {
+    "id": "stat-counter",
+    "component": "StatCounter",
+    "variant": "default",
+    "duration": 150,
+    "sourceText": "readers in the first month"
+  },
+  {
+    "id": "bar-chart",
+    "component": "BarChart",
+    "variant": "default",
+    "duration": 150,
+    "sourceText": "Consistency beats intensity."
+  },
+  {
+    "id": "line-chart",
+    "component": "LineChart",
+    "variant": "default",
+    "duration": 150,
+    "sourceText": "Up and to the right."
+  },
+  {
+    "id": "image-frame",
+    "component": "ImageFrame",
+    "variant": "default",
+    "duration": 150,
+    "sourceText": "A screenshot of the real thing."
+  },
+  {
+    "id": "code-block",
+    "component": "CodeBlock",
+    "variant": "typing",
+    "duration": 150,
+    "sourceText": "const reel = build({ beat: 'intro' });"
+  },
+  {
+    "id": "lower-third",
+    "component": "LowerThird",
+    "variant": "default",
+    "duration": 150,
+    "sourceText": "CHAPTER 2 — THE BUILD"
+  },
+  {
+    "id": "chapter-card",
+    "component": "ChapterCard",
+    "variant": "default",
+    "duration": 150,
+    "sourceText": "PART: The Build"
+  },
+  {
+    "id": "outro-cta",
+    "component": "OutroCTA",
+    "variant": "default",
+    "duration": 150,
+    "sourceText": "Follow along. The next reel is already in the edit."
+  },
+  {
+    "id": "mask-reveal",
+    "component": "MaskReveal",
+    "variant": "default",
+    "duration": 150,
+    "sourceText": "What comes next..."
+  }
+]
