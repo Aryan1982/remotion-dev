@@ -9,7 +9,6 @@ import { springP } from "../motion";
 import { SceneFrame } from "./SceneFrame";
 import { Background } from "./Background";
 import { GrainOverlay } from "./Grain";
-import { AmbientParticles } from "./ambientParticles";
 import { SceneText } from "./SceneText";
 import type { SceneProps } from "./IntroPulse";
 
@@ -37,7 +36,6 @@ export const BarChart: React.FC<Props> = ({
   return (
     <SceneFrame durationInFrames={duration}>
       <Background />
-      <AmbientParticles startFrame={startFrame} />
       <AbsoluteFill
         style={{
           flexDirection: "column",

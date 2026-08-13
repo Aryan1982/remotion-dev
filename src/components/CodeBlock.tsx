@@ -42,7 +42,6 @@ export const CodeBlock: React.FC<Props> = ({
   return (
     <SceneFrame durationInFrames={duration}>
       <Background />
-      <AmbientParticles startFrame={startFrame} />
       <AbsoluteFill
         style={{
           flexDirection: "column",

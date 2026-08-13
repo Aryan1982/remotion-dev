@@ -14,7 +14,7 @@ export const AmbientParticles: React.FC<{ startFrame?: number }> = ({ startFrame
   const frame = useCurrentFrame() + startFrame;
   return (
     <AbsoluteFill style={{ overflow: "hidden", pointerEvents: "none" }}>
-      {PARTICLES.map(([left, top, size, phase, depth], index) => {
+      {/* {PARTICLES.map(([left, top, size, phase, depth], index) => {
         // Foreground particles swing wider and faster; background barely moves.
         const amp = 12 + depth * 14;
         const speed = 26 + depth * 22;
@@ -52,7 +52,7 @@ export const AmbientParticles: React.FC<{ startFrame?: number }> = ({ startFrame
           backgroundSize: "9px 9px",
           transform: `translateY(${Math.sin(frame / 80) * 3}px)`,
         }}
-      />
+      /> */}
     </AbsoluteFill>
   );
 };

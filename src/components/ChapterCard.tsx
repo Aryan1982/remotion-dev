@@ -112,7 +112,6 @@ export const ChapterCard: React.FC<Props> = ({
   return (
     <SceneFrame durationInFrames={duration}>
       <Background />
-      <AmbientParticles startFrame={startFrame} />
 
       <AbsoluteFill
         style={{
