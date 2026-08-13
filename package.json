@@ -30,6 +30,7 @@
   "scripts": {
     "dev": "remotion studio",
     "build": "remotion bundle",
+    "vercel-build": "npx remotion bundle",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc"
   },

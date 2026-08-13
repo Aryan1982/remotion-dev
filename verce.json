@@ -1,5 +1,5 @@
 {
-    "buildCommand": "npm run build",
+    "buildCommand": "npx remotion bundle",
     "outputDirectory": "build",
     "rewrites": [
       { "source": "/(.*)", "destination": "/index.html" }
