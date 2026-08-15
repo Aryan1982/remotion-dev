@@ -7,6 +7,7 @@ const getPromptTemplate = () => {
 
   const componentDescriptions: Record<string, string> = {
     HookIntro: "Dynamic word-by-word text intro with brackets and emphasis",
+    ChapterCard: "Chapter/part introduction like part 1 here is..",
     IntroPulse: "Pulsing circle intro with ambient effects",
     SignalRipple: "Ripple effects with heartbeat animation",
     ProgressRing: "Animated progress/ring visualization",
@@ -25,9 +26,9 @@ const getPromptTemplate = () => {
     ImageFrame: "Image frame with effects",
     CodeBlock: "Code typing animation",
     LowerThird: "Lower third graphic",
-    ChapterCard: "Chapter/part introduction",
     OutroCTA: "Call-to-action outro",
     MaskReveal: "Mask reveal animation",
+    DayCounter: "Day countdown/counter animation",
   };
 
   return `You are a video scene designer for Remotion. Create a JSON configuration for video scenes based on the script provided.

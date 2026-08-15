@@ -22,6 +22,7 @@ import { ChapterCard } from "./components/ChapterCard";
 import { OutroCTA } from "./components/OutroCTA";
 import { MaskReveal } from "./components/MaskReveal";
 import { HookIntro } from "./components/HookIntro";
+import { DayCounter } from "./components/DayCounter";
 
 export type { SceneProps };
 
@@ -48,4 +49,5 @@ export const COMPONENTS: Record<string, React.FC<SceneProps>> = {
   ChapterCard,
   OutroCTA,
   MaskReveal,
+  DayCounter,
 };

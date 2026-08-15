@@ -30,7 +30,7 @@ export const MyComposition = () => {
         height={1920}
       />
       <Composition
-        id="Twelve"
+        id="Your-Scene"
         component={withProviders(Thirteen)}
         durationInFrames={2200}
         fps={30}

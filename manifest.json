@@ -13,8 +13,7 @@
     { "name": "TextReveal", "description": "Multi-line paragraph or caption reveal for exposition beats.", "variants": ["default", "centered"] },
     { "name": "BulletList", "description": "Checklist or step-by-step item reveal, one point at a time.", "variants": ["checkmark", "dot"] },
     { "name": "QuoteCard", "description": "Pulled quote or key-takeaway callout.", "variants": ["default"] },
-    { "name": "DayCounter", "description": "For counting days( here is day .. of etc etc) in here.", "variants": ["default"] },    
-    { "name": "ComparisonSplit", "description": "Two-column this-vs-that comparison.", "variants": ["default"] },
+   { "name": "ComparisonSplit", "description": "Two-column this-vs-that comparison.", "variants": ["default"] },
     { "name": "Timeline", "description": "Vertical sequence, step, or dated progression.", "variants": ["vertical"] },
     { "name": "FlowConnector", "description": "Cause-to-effect path, flow, or 'this leads to that'.", "variants": ["default"] },
     { "name": "StatCounter", "description": "Number counts up with overshoot for stats or metrics.", "variants": ["default"] },
@@ -28,7 +27,3 @@
     { "name": "MaskReveal", "description": "Soft circular wipe transition or reveal.", "variants": ["default"] }
   ]
 }
-
-// Use hook for first motion
-// ?use chapters for each points
-// use counter for 
